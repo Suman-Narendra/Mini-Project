@@ -1,0 +1,39 @@
+<h1>All Blogs</h1>
+    <div *ngFor="let b of blogData, let i=index" class="blogCard">
+        <div class="card">
+            <img src="{{b.urlToImage}}" class="blogImg" loading = "lazy" onerror="this.src='./assets/noImg.png'">
+            
+            <h2> Title:{{b.title}}</h2><br>
+            <p> Description:{{b.description}}</p><br>
+            <p> Published:{{b.publishedAt}}</p><br>
+        
+            <button class="read"><a [routerLink]="['blogs/',i]">Read More</a></button>
+            
+
+           
+    <div class="modal-container">
+
+        <input id="modal-toggle" type="checkbox">
+        
+        <button class="delete" >Delete</button>
+        
+        <div class="modal-backdrop">
+        
+        <div class="modal-content">
+        <h3>Are you sure Do you want to delete blog?</h3><br>
+        <label  class="readmore2" for="modal-toggle">Cancel</label>
+    
+<!--         
+        <button (click)="deleteBlog(i)" class="readmore1" >Delete</button> -->
+        <button (click)="deleteBlog(i)" for="modal-toggle"> Delete Blog</button> 
+        </div>
+        
+        </div>
+        
+        </div>
+            
+            
+        </div>
+        <br/><br>
+    </div>
+

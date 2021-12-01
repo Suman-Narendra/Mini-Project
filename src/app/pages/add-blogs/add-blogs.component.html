@@ -1,0 +1,44 @@
+
+                <div class="addblog">
+                  <h1>Create Your Own Blogs</h1>
+                    <form [formGroup]="addblogs">
+
+                        <div class="form-group">
+                          <label>Title:</label>
+                          <input formControlName="title" type="text" class="form-control"> <br><br>
+                          <small *ngIf="title.invalid && title.touched" class="text-danger">Title is Required(maximum length 70)</small> 
+                        </div>
+                        <div class="form-group">
+                          <label class="blog-form-input">Author:</label>
+                          <input formControlName="author" type="author" class="form-control" > <br><br>
+                          <small *ngIf="author.invalid && author.touched" class="text-danger">Author is Required</small>
+                        </div>
+                        <div class="form-group">
+                          <label class="blog-form-input">Content:</label>
+                          <input formControlName="content" type="text" class="form-control" > <br><br>
+                          <small *ngIf="title.invalid && title.touched" class="text-danger">Content is Required</small>
+                        </div>
+                        <div class="form-group">
+                          <label class="blog-form-input">Description:</label><br>
+                          <textarea formControlName="description" class="form-control" ></textarea><br><br>
+                          <small *ngIf="description.invalid && description.touched" class="text-danger"> Description is Required(maximum length 250)</small> 
+                        </div>
+
+                        <div class="form-group">
+                            <label class="blog-form-input">Image URL:</label>
+                            <input formControlName="urlToImage" class="form-control" ><br><br>
+                            <small *ngIf="urlToImage.invalid && urlToImage.touched" class="text-danger"> ImageUrl is Required</small> 
+                          </div>
+
+                          <div class="form-group">
+                            <label class="blog-form-input">Published At</label>
+                            <input formControlName="publishedAt" class="form-control" > <br><br>
+                            <small *ngIf="publishedAt.invalid && publishedAt.touched" class="text-danger"> Published At is Required(minimum length 10</small> 
+                          </div>
+
+                        <button (click)="onsubmit()"  [disabled]="addblogs.invalid" type="submit" >Add Blog</button>
+                        <button (click)="clicksub()" [disabled]="addblogs.invalid">Reset</button>
+                        <!-- <button (click)="del(addblogs)" [disabled]="addblogs.invalid">delete</button> -->
+                      </form>
+                </div>
+        

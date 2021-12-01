@@ -1,0 +1,30 @@
+<div >
+
+
+
+    <div class="blogcards">
+
+        <img src="{{blogs.urlToImage}}" loading = "lazy" onerror="this.src='../../assets/noImg.png'">
+
+     
+
+        <h2 class="title"><span>Title:</span>{{blogs.title}}</h2>
+
+        <p><B>Author:</B>{{blogs.author}}</p>
+
+        <p><B>Content:</B>{{blogs.content}}</p>
+
+        <p><B>Description:</B>{{blogs.description}}</p>
+
+        <p><B> publishedAt:</B>{{blogs.publishedAt | date:'medium' }}</p> 
+         
+        <button class="update" (click)="updateBlog(blogs)"> Update Blog</button>
+
+        <br><br>
+
+    </div>
+
+
+
+
+</div>

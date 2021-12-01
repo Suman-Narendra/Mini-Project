@@ -1,0 +1,65 @@
+.cover
+{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+h1{
+ margin-left: 270px;
+ color:red;
+}
+/* .bg{
+    background-image: url('../../assets/bgimg1.jpg');
+} */
+h2{
+    text-align: center;
+    color:blue;
+}
+.blogImg
+{
+    width:800px;
+    height: 300px;
+    border-radius: 15px;
+}
+.card p{
+    margin: 0px;
+    padding-left: 20px;
+}
+.card
+{
+    width:800px;
+    margin-left: 250px;
+    border:1px solid black;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.read
+{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 680px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+.read a{
+    text-decoration: none;
+    color: white;
+}
+
+.static
+{
+    width:800px;
+    height: 400px;
+}
+
+.view
+{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-left: 940px;
+    cursor:pointer;
+    
+}
+
